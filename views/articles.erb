@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Submit New Articles </title>
+  <link rel="stylesheet" href="/stylesheets/server.css">
+</head>
+<body>
+  <h1> Submit New Articles </h1>
+
+  <form action="news_aggregator.csv" method="post">
+    <div>
+    <label for="article_title">Article Title</label>
+    <input type="text" id="article_title" name="article_title">
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description">
+    <label for="url">URL</label>
+    <input type="url" id="url" name="url">
+
+    <input type="submit">
+  </div>
+  <div>
+
+  </form>
+
+  <a href="/" id= "main">Main Page</a>
+  <a href="/articles"id= "main">Articles</a>
+</body>
+</html>

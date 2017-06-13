@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  /*margin-right: auto;*/
+  text-align: center;
+}
+
+h1, h2, h4, div{
+  color: white;
+}
+
+#title{
+  color: pink;
+  /*text-align: center;*/
+  /*margin-left: auto;*/
+}
+
+#description {
+  color: white;
+}
+
+#url {
+  color: red;
+}
+
+a {
+  color: orange;
+}
+
+#main {
+  color: pink;
+  /*text-align: center;*/
+}
+
+table {
+  display: table;
+  border-color: red;
+  border-style: solid;
+}
