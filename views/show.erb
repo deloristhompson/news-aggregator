@@ -5,23 +5,27 @@
   <link rel="stylesheet" href="/stylesheets/server.css">
 </head>
 <body>
-  <h1>Articles</h1>
+  <h1 class="maintop">Articles</h1>
   <h4>
     <div>
       <%= @article_name %>
-     <% @complete_article.each do |row| %>
-     <br/>
-     <table align="center">
-       <span id = "title"><th>Title: <%= row[0]%></span><br/>
-    <span id = "description">Description: <%= row[1] %></span><br/>
-     <span id= "url">URL: </span><a href="<%= row[2] %>"><%= row[2]%></a>
-   </th>
-   </table>
-     <br/>
-    <% end %>
+      <% @complete_article.each do |row| %>
+      <br/>
+      <table align="center">
+        <span id = "title"><th>Title: <%= row[0]%></span><br/>
+          <span id = "description">Description: <%= row[1] %></span><br/>
+          <span id= "url">URL:</span><a href="<%= row[2] %>"><%= row[2]%></a>
+        </th>
+      </table>
+      <br/>
+      <% end %>
+    </div>
   </h4>
-
-<a href="/">Main Page</a>
-<a href="/articles/new">New</a>
 </body>
+<footer>
+  <h3>
+    <a href="/">Main Page</a>
+    <a href="/articles/new">Submit New Article</a>
+  </h3>
+</footer>
 </html>

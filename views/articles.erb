@@ -5,24 +5,26 @@
   <link rel="stylesheet" href="/stylesheets/server.css">
 </head>
 <body>
-  <h1> Submit New Articles </h1>
-
+  <h1 class="maintop"> Submit New Articles </h1>
+<h3>
   <form action="news_aggregator.csv" method="post">
-    <div>
-    <label for="article_title">Article Title</label>
-    <input type="text" id="article_title" name="article_title">
-    <label for="description">Description</label>
-    <input type="text" id="description" name="description">
-    <label for="url">URL</label>
-    <input type="url" id="url" name="url">
+    <div id="submit-block">
+      <label for="article_title">Article Title</label>
+      <input type="text" id="article_title" name="article_title">
+      <label for="description">Description</label>
+      <input type="text" id="description" name="description">
+      <label for="url">URL</label>
+      <input type="url" id="url" name="url">
 
-    <input type="submit">
-  </div>
-  <div>
-
+      <input type="submit">
+    </div>
   </form>
-
-  <a href="/" id= "main">Main Page</a>
-  <a href="/articles"id= "main">Articles</a>
+</h3>
 </body>
+<footer class="bottom-links">
+  <h3>
+    <a href="/" id= "main">Main Page</a>
+    <a href="/articles"id= "main">Articles</a>
+  </h3>
+</footer>
 </html>

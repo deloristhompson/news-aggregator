@@ -16,17 +16,13 @@ get '/' do
 end
 
 get '/articles' do
-
-    @complete_article = CSV.read("news_aggregator.csv") do |row|
-     row
-    end
-    # binding.pry
-erb :show
+  @complete_article = CSV.read("news_aggregator.csv") do |row|
+    row
+  end
+  erb :show
 end
 
-
 post "/articles/:article_name" do
-
   article_title = params["article_title"]
   description = params["description"]
   url = params["url"]
@@ -38,7 +34,6 @@ post "/articles/:article_name" do
 
   CSV.open("news_aggregator.csv", "a") do |csv|
     csv.puts(article)
-
   end
 
   redirect "/articles"
